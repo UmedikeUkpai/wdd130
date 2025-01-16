@@ -1,27 +1,15 @@
-.callout {
-    max-width: 400px; 
-    margin: 10px;
-    border: 1px solid black;
-    padding: 15px;
-    background-color: chocolate;
-    text color: #fff;	
-}
-
-.callout img {
-	position (float): right;, 
-    margin: 0 0 10px 15px;
-    border: 1px solid black;
-    padding: 3px;
-    background-color: darkblue;
-    width: 15 0px;
-    height: auto;
-}
-
-blockquote {
-	margin: 0;
-}
-
-cite {
+<main>
+	<div class="callout">
+		<img src="images/apostlepaul" alt="Paul the Apostle" width="150" height="150">
+		<blockquote>
+			<p>11 Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content.</p>
+			<p>12 I know both how to be abased, and I know how to abound: every where and in all things I am instructed both to be full and to be hungry, both to abound and to suffer need.</p>
+			<p>13 I can do all things through Christ which strengtheneth me.</p>
+		</blockquote>
+		<cite>Philippians 4:11-13</cite>
+		<p></p>
+	</div>
+</main>
 	display: block;
     top border: 1px dotted white; 
     text alignment: right; 
