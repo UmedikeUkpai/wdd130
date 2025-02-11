@@ -1,49 +1,71 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="My name is Umedike Ukpai, the purpose of the website is for my assignment on WDD130" >
-        <meta name="author" content=" Umedike Ukpai">
-        <title>Ukpai Umedike | WDD 130</title>
-        <link rel="stylesheet" href="styles/rafting.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </head>
-    <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My name is Umedike Ukpai, the purpose of the website is for my assignment on WDD130">
+    <meta name="author" content="Umedike Ukpai">
+    <title>Ukpai Umedike | WDD 130</title>
+    <link rel="stylesheet" href="styles/rafting.css"> <!-- Link to the separated CSS file -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
     <header>
-        <img src="images/logo.jpg" alt="">
-        <nav>
+        <img src="images/logo.jpg" alt="Yuukay Rafting Company Logo" width="84">
+        <nav class="navigation">
             <a href="index.html">Index</a>
             <a href="about.html">About</a>
             <a href="trips.html">Trips</a>
             <a href="contacts.html">Contact us</a>
         </nav>
-    </header>        
-    </body>
+    </header>
     <main>
-        <div class="herodiv">
-            <img src="images/rafting.jpg" alt="">
+        <div class="hero">
+            <img src="images/rafting1.jpg" alt="Rafting">
             <h1>Yuukay Rafting Company</h1>
             <article> 
-                <img src="images/rafting4.jpg" alt="">
-                <p>We are here to make your holiday a fun filled experience. To provide you with the best relaxation activities to revitalize your body.</p>
+                <img src="images/rafting4.jpg" alt="Rafting Experience">
+                <p>We are here to make your holiday a fun-filled experience. To provide you with the best relaxation activities to revitalize your body.</p>
             </article>
         </div>
-        <section>
+        <section class="threecols">
             <h2>History</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, nisi!</p>
+            <div class="history-content">
+                <p>Yuukay Rafting company Explorers welcomes you to Lungu. East Edda's Adventure Capital is home to some of the world's finest grade 5 white water rafting and other adventure activities. Whether you are a first-timer, family or high adventure enthusiast, you’ll find your perfect white water adventure here with Yuukay River Explorers.</p>
+                <img src="images/rafting.jpg" width="200" alt="History Image">
+                <p>A river boat cruise is the perfect way to enjoy a few relaxing hours on the River Yuukay. We have a variety of cruises which all start from Yuukay Explorers River Camp at Lungu and explore the beginning of the world’s longest river</p>
+            </div>
         </section>
-        <section>
+        <section id="adventures">
             <h2>Adventure Awaits You!</h2>
-            <img src="images/rafting1.jpg" alt="sailing">
-            <img src="images/rafting2.jpg" alt="diving">
-            <img src="images/rafting3.jpg" alt="descending">
+            <div class= "flex-container">
+                <figure> 
+                    <img src="images/rafting pix.jpg" alt="sailing">
+                    <figcaption>Rapid splash</figcaption>
+                </figure>
+                <figure> 
+                    <img src="images/rafting2.jpg" alt="diving">
+                    <figcaption>Diving</figcaption>
+                </figure>
+                <figure> 
+                    <img src="images/rafting3.jpg" alt="descending">
+                    <figcaption>Descending</figcaption>
+                </figure>
+                <figure> 
+                    <img src="images/rafting5.jpg" alt="diving">
+                    <figcaption>Navigating</figcaption>
+                </figure>
+            </div>
         </section>
     </main>
     <footer>
-        <nav class="Social Links">
+        <div class="wireframe">
+            <a href="https://app.moqups.com/M3BtUusq5un37pTM9sZWbWw3cSBNvU5u/view/page/ad64222d5">View Wireframe</a>
+        </div>
+        <p>&copy; 2024 | Yuukay Rafting Company | Umedike Ukpai</p>
+        <nav class="socialmedia">
             <a href="https://facebook.com">
                 <img src="images/facebook.webp" alt="Facebook">
             </a>
@@ -55,4 +77,5 @@
             </a>
         </nav>
     </footer>
+</body>
 </html>

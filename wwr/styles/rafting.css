@@ -1,200 +1,205 @@
-/* About Us Page CSS */
+/* Define CSS Variables */
+:root {
+    --primary-color: hwb(0 0% 20%);   /* Primary color */
+    --secondary-color: hwb(99 0% 1%); /* Secondary color */
+    --accent1-color: hsl(0, 0%, 100%);   /* Accent color 1 */
+    --accent2-color: #F44336;   /* Accent color 2 */
+    --light-text-color: hsl(0, 0%, 100%); /* Light text color for dark backgrounds */ 
+    --dark-background: #040404ce; /* Dark background */
+    --heading-font: 'Playfair Display', serif;
+    --text-font: 'Roboto', sans-serif;
+    --threecol: h
+}
 
-/* About Us Page - Header Styling */
+* {
+    margin: 10;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
-    margin: 0.1rem auto;
+    margin: 0.1rem;
     display: grid;
     align-items: center;
-    grid-template-columns: 200px 1fr;
-    grid-gap: 30px;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 800px;
     background-color: var(--primary-color);
-  }
-  
-  header img {
-    margin: 0.40rem 0.25rem 0.40rem 5rem;
-      width: 84px;
-      height: auto;
-    justify-content: center;
-  }
-  
-  .navigation {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-      padding: 0;
-    justify-content: space-evenly;
-  }
-  
-  .navigation a {
-    display: inline;
-    color: var(--light-text-color);
-    flex-shrink: 0;
-    font-weight: bold;
-    padding: 20px;
-    text-decoration: none;
-  }
-  
-  .navigation a:hover {
-      color: var(--secondary-color);
-      font-weight: bolder;
-      text-decoration: underline;
-  }
-  
-  /* About Us Page - Hero Section Styling */
-  .hero {
+
+}
+
+header img {
+    margin: 0.5rem 0.1rem 0.5rem 10rem;
+    width: 100px;
+    height: auto;
+}
+
+main img {
+    width: 2000px;
+    height: 500px;
+    padding: 10px;
+}
+
+figure img {
+    padding: 0.1rem;
+    width: 100px;
+    height: 50px;
+}
+main article img {
+    width: 250px;
+    height: auto;
     position: relative;
-  }
-  
-  .hero img {
-    display: block;
+    float: right;
+}
+
+h2 {
+    margin: 0.1rem;
+    border: 0.1rem;
+    padding: 0.1rem;
+    background-color: rgb(204, 1, 1);
+
+}
+.threecols {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+    grid gap: 1rem;
+    position: center;
+}
+
+.threecols h2 {
+    grid-column: 2/4;
+}
+article p {
+    margin: 100;
+}
+header nav a {
+    display: inline;
+    color: var(--dark-background);
+    flex-shrink: 10px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: aliceblue;
+    text-decoration: none;
+}
+section h2 div img {
+    margin: 0rem;
+    padding: 0rem;
+}
+nav a:hover {
+    color: var(--secondary-color);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+}
+
+.herodiv img {
+    display:1000px;
     width: 100%;
     height: auto;
-  }
-  
-  .hero h1 {
+}
+
+.hero h1 {
     position: absolute;
-    top: 50px;
-    right: 510px;
+    width: 92rem;
+    top: 10px;
+    right: 0px;
+    font-size: 50px;
     color: var(--light-text-color);
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-  
-  /* About Us Page - Article Styling */
-  article {
+    background-color:var(--dark-background);
+    text-align: center;
+}
+
+article {
     position: absolute;
-    bottom: 290px;
-    right: 150px;
+    bottom: 150px;
+    right: 300px;
     background-color: rgba(6, 44, 114, 0.6);
     padding: 5px;
     max-width: 940px;
-  }
-  
-  article p {
+}
+
+article p {
     color: var(--light-text-color);
-  }
-  
-  article img {
+}
+
+article img {
     float: right;
     width: 170px;
     height: auto;
     padding: 5px;
-  }
-  
-  /* About Us Page - History Section Styling */
-  #history {
+}
+
+section {
     margin: 2rem auto;
-    display: grid;
-  }
-  
-  #history h2 {
-    text-align: center;
-    font-size: x-large;
-    word-spacing: 5px;
-  }
-  
-  #history img {
-    margin: 0 1rem 0 1rem;
-    width: 200px;
-    height: auto;
-    border: 5px solid var(--primary-color);
-  }
-  
-  #history p {
-    margin: 0 1rem 0 1rem;
-  }
-  
-  .history-content {
+}
+
+.flex-container {
     display: flex;
+    width: 800px;
+    flex-direction: row;
     justify-content: space-around;
-  }
-  
-  /* About Us Page - Adventures Section Styling */
-  #adventures {
-    margin: 2rem auto;
-    display: grid;
-  }
-  
-  #adventures h2 {
+}
+
+section h2 {
     text-align: center;
-    font-size: x-large;
-  }
-  
-  #adventures .adventures-gallery {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .adventures-gallery img {
-    display: inline;
-    width: 200px;
+    font-size: 2rem;
+    word-spacing: 5px;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+h2 img {
+    margin: 0.1rem;
+}
+section p {
+    margin: 0 1rem 0 1rem;
+    font-family: var(--text-font);
+    color: var(--primary-color);
+}
+
+section img {
+    display: block;
+    margin: 0.5rem auto;
+    width: 300px;
     height: auto;
     border: 3px solid var(--primary-color);
     box-shadow: 0 0 20px var(--primary-color);
-    flex-shrink: 0;
-  }
-  
-  #adventures figure {
-    flex: 1;
+}
+
+section figcaption {
     text-align: center;
-    margin: 1em;
-  }
-  
-  #adventures figcaption {
-    margin-top: 0.3em;
-    font-style: italic;
-    color: var(--primary-color);
-  }
-  
-  /* General Styling for About Us Page */
-  h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--accent1-color);
-  }
-  
-  p {
-    font-family: var(--text-font);
-    color: var(--primary-color);
-    margin: 5px;
-    padding-bottom: 10px;
-  }
-  
-  footer {
+}
+footer {
     margin: 0.1rem auto;
-    display: grid;
-    grid-template-columns: 300px 1fr 300px;
+    display: flex;
+    grid-template-columns: 30px 5fr 30px;
     align-items: center;
     background-color: var(--primary-color);
-  }
-  
-  footer p {
+}
+
+footer nav a img {
+    width: 64px;
+    height: auto;
+    padding: 15px;
+}
+
+footer nav a {
+    text-decoration: none;
+}
+
+footer p {
     text-align: center;
     color: var(--light-text-color);
     font-size: smaller;
     margin-right: 100px;
-  }
-  
-  footer .wireframe a {
-    display: inline;
-    color: var(--light-text-color);
-    text-align: center;
-    font-weight: bold;
-    text-decoration: none;
-    margin-left: 90px;
-  }
-  
-  footer .wireframe a:hover {
-    text-decoration: underline;
-    color: var(--secondary-color);
-    font-weight: bolder;
-  }
-  
-  footer .socialmedia a img {
-    width: 64px;
-    height: auto;
-    padding: 15px;
-  }
-  
-  footer .socialmedia a {
-    text-decoration: none;
-  }
+}
