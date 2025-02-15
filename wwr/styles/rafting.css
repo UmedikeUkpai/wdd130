@@ -1,7 +1,7 @@
 /* Define CSS Variables */
 :root {
     --primary-color: hwb(0 0% 20%);   /* Primary color */
-    --secondary-color: hwb(134 1% 49%); /* Secondary color */
+    --secondary-color: hwb(134 0% 69%); /* Secondary color */
     --accent1-color: hsl(0, 0%, 100%);   /* Accent color 1 */
     --accent2-color: #000000;   /* Accent color 2 */
     --light-text-color: hsl(0, 0%, 100%); /* Light text color for dark backgrounds */ 
@@ -53,11 +53,13 @@ main article img {
 
 h2 {
     margin: 0.1rem;
+    color: white;
+    text-align: center;
     border: 0.1rem;
     padding: 0.1rem;
-    background-color: rgb(204, 1, 1);
-
+    background-color: rgb(198, 1, 1);
 }
+
 .threecols {
     display: grid;
     grid-template-columns: (1fr 2fr 100px);
@@ -85,6 +87,7 @@ header nav a {
 section h2 div img {
     margin: 0rem;
     padding: 0rem;
+    
 }
 nav a:hover {
     color: var(--secondary-color);
