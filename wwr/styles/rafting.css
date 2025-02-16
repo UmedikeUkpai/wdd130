@@ -163,7 +163,7 @@ section {
     display: flex;
     color: #000;
     align-items: center;
-    gap: 6rem;
+    gap: 4rem;
 }
 .flexcontainer img {
     border-radius: 10rem;
