@@ -1,0 +1,94 @@
+head {
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+}
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+    color: rgb(86, 1, 1);
+    background: white;
+}
+header {
+    margin: 0 auto;
+    width: 650px;
+}
+h1 {
+    margin: 1rem ;
+    font-size: 1.5rem;
+    color: rgb(86, 1, 1);
+    text-align: center;
+}
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgb(86, 1, 1);
+    border-radius: 0.5rem;
+    background-color: rgb(195, 206, 206);
+    display: grid;
+}
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgb(red, green, blue);
+    padding: 1rem;
+}
+legend {
+    padding: 0.5rem;
+    color: rgb(0, 0, 76);
+    font-size: 1.3rem;
+}
+label, input, select, button, textarea {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+button {
+    margin: 1rem;
+    background-color: rgb(0, 0, 76);
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+button:hover {
+    background-color: rgb(3, 103, 25);
+}
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: .8rem;
+    color: #777;
+    border-top: 1px solid #ccc;
+}
+.form-item {
+    display: grid;
+    align-items: center;
+}
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: .5rem 0;
+}
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
