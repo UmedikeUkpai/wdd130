@@ -8,9 +8,8 @@
     --dark-background: #191a19c1; /* Dark background */
     --heading-font: 'Playfair Display', serif;
     --text-font: 'Roboto', sans-serif;
-    --threecol: h
+    --threecol: 
 }
-
 * {
     margin: 0;
     padding: 0;
@@ -157,6 +156,12 @@ section {
     justify-content:space-around;
     gap: 2rem;
     margin: 1rem;
+}
+.main img {
+    width: 160px;
+    height: auto;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px var(--primary-color);
 }
 
 .flexcontainer {
